@@ -153,6 +153,31 @@ data.raw["unit-spawner"]["copper-biter-spawner"].graphics_set = {
 	}
 }
 
+data.raw["assembling-machine"]["captive-copper-biter-spawner"].graphics_set = {
+	animation = {
+		layers = {
+			{
+				filename = "__pelagos-enemy-reskin__/graphics/spitter-pelagos-nest-captured.png",
+				frame_count = 1,
+				scale = 0.456,
+				animation_speed = 0.12,
+				run_mode = "forward-then-backward",
+				surface = "nauvis",
+				usage = "enemy",
+				width = 376,
+				height = 376,
+				line_length = 1,
+				lines_per_file = 1,
+				x = 0,
+				y = 0
+			}
+		}
+	}
+}
+
+
+--data.raw["assembling-machine"]["captive-copper-biter-spawner"].graphics_set.working_visualisations = data.raw["assembling-machine"]["captive-copper-biter-spawner"].graphics_set.animations
+
 
 ------------- Spawner corpse -------------
 
