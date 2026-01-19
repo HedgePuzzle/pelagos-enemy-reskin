@@ -15,10 +15,10 @@ data.raw["unit"]["big-copper-biter"].run_animation = {
 	  {
 		  direction_count = 16,
 		  filenames = {
-			"__pelagos-enemies__/graphics/spitter-pelagos-run-1.png",
-			"__pelagos-enemies__/graphics/spitter-pelagos-run-2.png",
-			"__pelagos-enemies__/graphics/spitter-pelagos-run-3.png",
-			"__pelagos-enemies__/graphics/spitter-pelagos-run-4.png"
+			"__pelagos-enemy-reskin__/graphics/spitter-pelagos-run-1.png",
+			"__pelagos-enemy-reskin__/graphics/spitter-pelagos-run-2.png",
+			"__pelagos-enemy-reskin__/graphics/spitter-pelagos-run-3.png",
+			"__pelagos-enemy-reskin__/graphics/spitter-pelagos-run-4.png"
 		  },
 		  frame_count = 21,
 		  height = 248,
@@ -43,9 +43,9 @@ data.raw["unit"]["big-copper-biter"].attack_parameters.animation = {
 		{
 		  direction_count = 16,
 		  filenames = {
-			"__pelagos-enemies__/graphics/spitter-pelagos-attack-1.png",
-			"__pelagos-enemies__/graphics/spitter-pelagos-attack-2.png",
-			"__pelagos-enemies__/graphics/spitter-pelagos-attack-3.png"
+			"__pelagos-enemy-reskin__/graphics/spitter-pelagos-attack-1.png",
+			"__pelagos-enemy-reskin__/graphics/spitter-pelagos-attack-2.png",
+			"__pelagos-enemy-reskin__/graphics/spitter-pelagos-attack-3.png"
 		  },
 		  frame_count = 14,
 		  height = 248,
@@ -97,17 +97,17 @@ other_spitter_units[5] = "big-copper-biter"  -- Mustn't forget to add the mask f
 for _, unit_name in ipairs(other_spitter_units) do
 	data.raw["unit"][unit_name].run_animation.layers[2] = table.deepcopy(data.raw["unit"][unit_name].run_animation.layers[1])
 	data.raw["unit"][unit_name].run_animation.layers[2].filenames = {
-		"__pelagos-enemies__/graphics/spitter-pelagos-run-mask-1.png",
-		"__pelagos-enemies__/graphics/spitter-pelagos-run-mask-2.png",
-		"__pelagos-enemies__/graphics/spitter-pelagos-run-mask-3.png",
-		"__pelagos-enemies__/graphics/spitter-pelagos-run-mask-4.png"
+		"__pelagos-enemy-reskin__/graphics/spitter-pelagos-run-mask-1.png",
+		"__pelagos-enemy-reskin__/graphics/spitter-pelagos-run-mask-2.png",
+		"__pelagos-enemy-reskin__/graphics/spitter-pelagos-run-mask-3.png",
+		"__pelagos-enemy-reskin__/graphics/spitter-pelagos-run-mask-4.png"
 	}
 	
 	data.raw["unit"][unit_name].attack_parameters.animation.layers[2] = table.deepcopy(data.raw["unit"][unit_name].attack_parameters.animation.layers[1])
 	data.raw["unit"][unit_name].attack_parameters.animation.layers[2].filenames = {
-		"__pelagos-enemies__/graphics/spitter-pelagos-attack-mask-1.png",
-		"__pelagos-enemies__/graphics/spitter-pelagos-attack-mask-2.png",
-		"__pelagos-enemies__/graphics/spitter-pelagos-attack-mask-3.png"
+		"__pelagos-enemy-reskin__/graphics/spitter-pelagos-attack-mask-1.png",
+		"__pelagos-enemy-reskin__/graphics/spitter-pelagos-attack-mask-2.png",
+		"__pelagos-enemy-reskin__/graphics/spitter-pelagos-attack-mask-3.png"
 	}
 end
 
@@ -134,7 +134,7 @@ data.raw["unit-spawner"]["copper-biter-spawner"].graphics_set = {
 		{
 			layers = {
 				{
-					filenames = {"__pelagos-enemies__/graphics/spitter-pelagos-nest-idle.png"},
+					filenames = {"__pelagos-enemy-reskin__/graphics/spitter-pelagos-nest-idle.png"},
 					frame_count = 4,
 					scale = 1.0,
 					animation_speed = 0.12,
@@ -168,7 +168,7 @@ new_corpse.animation = {
 	{
 		layers = {
 			{
-				filename = "__pelagos-enemies__/graphics/spitter-pelagos-nest-die.png",
+				filename = "__pelagos-enemy-reskin__/graphics/spitter-pelagos-nest-die.png",
 				direction_count = 1,
 				frame_count = 20,
 				scale = 1.0,
@@ -190,7 +190,7 @@ new_corpse.decay_animation = {
 	{
 		layers = {
 			{
-				filename = "__pelagos-enemies__/graphics/spitter-pelagos-nest-decay.png",
+				filename = "__pelagos-enemy-reskin__/graphics/spitter-pelagos-nest-decay.png",
 				direction_count = 1,
 				frame_count = 9,
 				scale = 1.0,
