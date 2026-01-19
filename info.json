@@ -1,0 +1,9 @@
+{
+  "name": "pelagos-enemies",
+  "version": "0.1.0",
+  "title": "Pelagos enemy reskin",
+  "author": "InanimateLog",
+  "factorio_version": "2.0",
+  "dependencies": ["base >= 2.0", "pelagos"],
+  "description": "Reskins Pelagos enemies"
+}
