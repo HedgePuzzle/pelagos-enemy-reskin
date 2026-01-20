@@ -126,7 +126,6 @@ for _, unit_name in ipairs(other_spitter_units) do
 end
 
 
-
 ------------- Spawners -------------
 
 data.raw["unit-spawner"]["copper-biter-spawner"].graphics_set = {
@@ -176,8 +175,18 @@ data.raw["assembling-machine"]["captive-copper-biter-spawner"].graphics_set = {
 }
 
 
---data.raw["assembling-machine"]["captive-copper-biter-spawner"].graphics_set.working_visualisations = data.raw["assembling-machine"]["captive-copper-biter-spawner"].graphics_set.animations
 
+-- Icons
+
+data.raw["unit"]["small-copper-biter"].icon = "__pelagos-enemy-reskin__/graphics/icons/spitter-pelagos-small.png"
+data.raw["unit"]["medium-copper-biter"].icon = "__pelagos-enemy-reskin__/graphics/icons/spitter-pelagos-medium.png"
+data.raw["unit"]["big-copper-biter"].icon = "__pelagos-enemy-reskin__/graphics/icons/spitter-pelagos-big.png"
+data.raw["unit"]["behemoth-copper-biter"].icon = "__pelagos-enemy-reskin__/graphics/icons/spitter-pelagos-behemoth.png"
+data.raw["unit"]["leviathan-copper-biter"].icon = "__pelagos-enemy-reskin__/graphics/icons/spitter-pelagos-leviathan.png"
+
+data.raw["unit-spawner"]["copper-biter-spawner"].icon = "__pelagos-enemy-reskin__/graphics/icons/spitter-pelagos-nest.png"
+data.raw["assembling-machine"]["captive-copper-biter-spawner"].icon = "__pelagos-enemy-reskin__/graphics/icons/spitter-pelagos-nest-captured.png"
+data.raw["item"]["captive-copper-biter-spawner"].icon = data.raw["assembling-machine"]["captive-copper-biter-spawner"].icon
 
 ------------- Spawner corpse -------------
 
