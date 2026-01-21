@@ -187,6 +187,7 @@ data.raw["unit"]["leviathan-copper-biter"].icon = "__pelagos-enemy-reskin__/grap
 data.raw["unit-spawner"]["copper-biter-spawner"].icon = "__pelagos-enemy-reskin__/graphics/icons/spitter-pelagos-nest.png"
 data.raw["assembling-machine"]["captive-copper-biter-spawner"].icon = "__pelagos-enemy-reskin__/graphics/icons/spitter-pelagos-nest-captured.png"
 data.raw["item"]["captive-copper-biter-spawner"].icon = data.raw["assembling-machine"]["captive-copper-biter-spawner"].icon
+data.raw["item"]["copper-biter-egg"].icon = "__pelagos-enemy-reskin__/graphics/icons/spitter-pelagos-egg.png"
 
 ------------- Spawner corpse -------------
 
